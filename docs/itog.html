@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <style>
+header {
+    background-color: #9e6c6c;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    }
+    
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    }
+    
+nav ul li {
+    margin: 0 10px;
+    }
+    
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    }
+    
+main {
+    margin: 20px;
+    }
+    
+section {
+    margin: 50px 0;
+    text-align: center;
+    }
+    
+section ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    }
+    
+section ul li {
+    margin: 20px;
+    flex-basis: 30%;
+    }
+   
+section ul li h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    }
+
+section ul li h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    }
+    
+section ul li img {
+    width: 100%;
+    }
+    
+section ul li p {
+    margin: 10px 0;
+    font-weight: bold;
+    }
+    
+section ul li button {
+    background-color: #9e6c6c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    
+section ul li button:hover {
+    background-color: #9e6c6c;
+    }
+    
+form label {
+    display: block;
+    margin: 10px 0;
+    }
+    
+form input[type="text"], form input[type="email"], form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    }
+    
+form button {
+    background-color: #9e6c6c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    
+form button:hover {
+    background-color: #9e6c6c;
+    }
+    
+footer {
+    background-color: #9e6c6c;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    }
+    </style>
+<head>
+    <title>Онлайн-Продуктовый</title>
+</head>
+<body>
+    <header>
+        <h1>Яблоко-Яблоня</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#product">Каталог продуктов</a></li>
+                <li><a href="#contact">Наши контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Добро пожаловать в наш онлайн продуктовый магазин</h2>
+                <p>Мы предлагаем широкий выбор продуктов питания.</p>
+        </section>
+        <section id="product">
+            <h2>Продукты на продажу</h2>
+                <ul>
+                    <li>
+                        <h3>Яблоко</h3>
+                        <img src="apple.jpg" alt="apple">
+                        <p>Цена: 120руб за 1 кг</p>
+                        <button>В корзину</button>
+                    </li>
+                    <li>
+                        <h3>Мандарин</h3>
+                        <img src="Orange.jpg" alt="Orange">
+                        <p>Цена: 90руб за 1 кг</p>
+                        <button>В корзину</button>
+                    </li>
+                    <li>
+                        <h3>Груша</h3>
+                        <img src="pear.jpg" alt="pear">
+                        <p>Цена: 150руб за 1кг</p>
+                        <button>В корзину</button>
+                    </li>
+                    <li>
+                        <h4>Авокадо</h4>
+                        <img src="avocado.jpg" alt="avocado">
+                        <p>Цена: 170руб за 1кг</p>
+                        <button>В корзину</button>
+                    </li>
+                </ul>
+        </section>
+        <section id="contact">
+            <h2>Связаться с нами</h2>
+                <form>
+                    <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name">
+                    <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    <label for="message">Ваше обращение:</label>
+                        <textarea id="message" name="message"></textarea>
+                    <button>Отправить</button>
+                </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Яблоко-Яблоня 2023</p>
+    </footer>
+</body>
+</html>
